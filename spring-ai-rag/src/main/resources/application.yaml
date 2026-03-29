@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: spring-ai-rag
+
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/javatechie
+#    username: root
+#    password: Password
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: ALWAYS
+
+    vectorstore:
+      qdrant:
+        initialize-schema: true
+        host: localhost
+        port: 6334
+        collection-name: javatechie
+
+  docker:
+    compose:
+      stop:
+        command: DOWN
+
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+
+server:
+  port: 9292

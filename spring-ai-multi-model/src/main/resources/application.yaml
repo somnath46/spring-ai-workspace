@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-ai-multi-model
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+#    model:
+#      chat: google-genai
+
+    google:
+      genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}
+
+#    ollama:
+#      base-url: http://localhost:11434/
+#      chat:
+#        model: llama3.2:1b
+
+server:
+  port: 7878

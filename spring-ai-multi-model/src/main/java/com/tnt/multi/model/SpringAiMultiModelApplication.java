@@ -1,0 +1,13 @@
+package com.tnt.multi.model;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringAiMultiModelApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringAiMultiModelApplication.class, args);
+	}
+
+}

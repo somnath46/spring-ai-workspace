@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: open-ai-demo
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+#    model:
+#      chat: google-genai
+#    google:
+#      genai:
+#        api-key: AIzaSyAi9ZtkEodac2jKXgdu3q_M9XJEq_aLHns
+
+
+server:
+  port: 7879
