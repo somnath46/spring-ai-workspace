@@ -88,3 +88,13 @@
 - download claude dektop
 - https://modelcontextprotocol.io/docs/develop/build-server#java
 - https://modelcontextprotocol.org/docs/learn/architecture
+
+## Date: 04-04-2026
+### MCP Client
+- MCP client
+- creating MCP client to talk to the claude MCP server
+- add dependecy for mcp client
+- MCP server
+- add follwing in mcp server app.yaml
+- web-application-type: NONE
+- banner mode: OFF
